@@ -7,7 +7,7 @@ const translations = {
     "nav-skills": "Skills",
     "nav-contact": "Contacto",
     "hero-eyebrow": "Hola, soy",
-    "hero-tagline": "Entusiasta de los sistemas. Amante de Linux. BTW, uso Arch. Fuera de la coña: me interesa más entender cómo funcionan las cosas por dentro —kernels, memoria, shaders— que quedarme usando un framework como caja negra.",
+    "hero-tagline": "Entusiasta de los sistemas. Amante de Linux. BTW, uso Arch. Fuera de broma: me interesa más entender cómo funcionan las cosas por dentro —kernels, memoria, shaders— que quedarme usando un framework como caja negra.",
     "hero-btn-projects": "Ver proyectos",
     "hero-btn-contact": "Contactame",
     "about-title": "Sobre mí",
