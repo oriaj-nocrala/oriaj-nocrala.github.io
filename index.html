@@ -12,31 +12,35 @@
 <header class="nav">
   <div class="nav-inner">
     <a href="#top" class="nav-brand">Jairo Alarcón</a>
-    <nav class="nav-links">
-      <a href="#about">Sobre mí</a>
-      <a href="#projects">Proyectos</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contacto</a>
-    </nav>
+    <div class="nav-right">
+      <nav class="nav-links">
+        <a href="#about" data-i18n="nav-about">Sobre mí</a>
+        <a href="#projects" data-i18n="nav-projects">Proyectos</a>
+        <a href="#skills" data-i18n="nav-skills">Skills</a>
+        <a href="#contact" data-i18n="nav-contact">Contacto</a>
+      </nav>
+      <button id="theme-toggle" class="icon-toggle" type="button" aria-label="Cambiar tema">🌙</button>
+      <button id="lang-toggle" class="icon-toggle lang-toggle" type="button" aria-label="Switch language">EN</button>
+    </div>
   </div>
 </header>
 
 <main>
   <section id="top" class="hero">
     <div class="hero-inner">
-      <p class="hero-eyebrow">Hola, soy</p>
+      <p class="hero-eyebrow" data-i18n="hero-eyebrow">Hola, soy</p>
       <h1>Jairo Alarcón</h1>
-      <p class="hero-tagline">Entusiasta de los sistemas. Amante de Linux. BTW, uso Arch. Fuera de la coña: me interesa más entender cómo funcionan las cosas por dentro —kernels, memoria, shaders— que quedarme usando un framework como caja negra.</p>
+      <p class="hero-tagline" data-i18n="hero-tagline">Entusiasta de los sistemas. Amante de Linux. BTW, uso Arch. Fuera de la coña: me interesa más entender cómo funcionan las cosas por dentro —kernels, memoria, shaders— que quedarme usando un framework como caja negra.</p>
       <div class="hero-actions">
-        <a class="btn btn-primary" href="#projects">Ver proyectos</a>
-        <a class="btn btn-ghost" href="#contact">Contactame</a>
+        <a class="btn btn-primary" href="#projects" data-i18n="hero-btn-projects">Ver proyectos</a>
+        <a class="btn btn-ghost" href="#contact" data-i18n="hero-btn-contact">Contactame</a>
       </div>
     </div>
   </section>
 
   <section id="about" class="section">
-    <h2>Sobre mí</h2>
-    <p>
+    <h2 data-i18n="about-title">Sobre mí</h2>
+    <p data-i18n="about-text">
       Ingeniero de software con acento en sistemas: me la paso más cómodo escribiendo un kernel
       en Rust, un allocator o un compositor para Wayland que ajustando un CSS. Aun así, también
       construyo productos completos de punta a punta —backend, frontend, apps móviles— cuando
@@ -46,69 +50,69 @@
   </section>
 
   <section id="projects" class="section">
-    <h2>Proyectos</h2>
+    <h2 data-i18n="projects-title">Proyectos</h2>
     <div class="grid">
       <article class="card">
         <h3>way-rain-screensaver</h3>
-        <p>Salvapantallas de lluvia nativo para Wayland, con simulación física de gotas cayendo por el escritorio usando wgpu.</p>
+        <p data-i18n="proj-rain-desc">Salvapantallas de lluvia nativo para Wayland, con simulación física de gotas cayendo por el escritorio usando wgpu.</p>
         <div class="card-tags">
           <span class="tag">Rust</span>
           <span class="tag">wgpu</span>
           <span class="tag">Wayland</span>
         </div>
-        <a class="card-link" href="https://github.com/oriaj-nocrala/way-rain-screensaver" target="_blank" rel="noopener">Ver repositorio →</a>
+        <a class="card-link" href="https://github.com/oriaj-nocrala/way-rain-screensaver" target="_blank" rel="noopener" data-i18n="card-link">Ver repositorio →</a>
       </article>
       <article class="card">
         <h3>rust_so_kernel</h3>
-        <p>Un kernel simple escrito en Rust, hecho como ejercicio para aprender sobre desarrollo de sistemas operativos.</p>
+        <p data-i18n="proj-kernel-desc">Un kernel simple escrito en Rust, hecho como ejercicio para aprender sobre desarrollo de sistemas operativos.</p>
         <div class="card-tags">
           <span class="tag">Rust</span>
           <span class="tag">OS Dev</span>
         </div>
-        <a class="card-link" href="https://github.com/oriaj-nocrala/rust_so_kernel" target="_blank" rel="noopener">Ver repositorio →</a>
+        <a class="card-link" href="https://github.com/oriaj-nocrala/rust_so_kernel" target="_blank" rel="noopener" data-i18n="card-link">Ver repositorio →</a>
       </article>
       <article class="card">
         <h3>AndroidCartel</h3>
-        <p>Cartel 3D ultra realista renderizado con shaders para Android.</p>
+        <p data-i18n="proj-cartel-desc">Cartel 3D ultra realista renderizado con shaders para Android.</p>
         <div class="card-tags">
           <span class="tag">GLSL</span>
           <span class="tag">Android</span>
         </div>
-        <a class="card-link" href="https://github.com/oriaj-nocrala/AndroidCartel" target="_blank" rel="noopener">Ver repositorio →</a>
+        <a class="card-link" href="https://github.com/oriaj-nocrala/AndroidCartel" target="_blank" rel="noopener" data-i18n="card-link">Ver repositorio →</a>
       </article>
       <article class="card">
         <h3>text3d</h3>
-        <p>Motor de renderizado de texto 3D de alto rendimiento en C, con OpenGL y Signed Distance Fields para texto nítido y escalable en tiempo real.</p>
+        <p data-i18n="proj-text3d-desc">Motor de renderizado de texto 3D de alto rendimiento en C, con OpenGL y Signed Distance Fields para texto nítido y escalable en tiempo real.</p>
         <div class="card-tags">
           <span class="tag">C</span>
           <span class="tag">OpenGL</span>
           <span class="tag">SDF</span>
         </div>
-        <a class="card-link" href="https://github.com/oriaj-nocrala/text3d" target="_blank" rel="noopener">Ver repositorio →</a>
+        <a class="card-link" href="https://github.com/oriaj-nocrala/text3d" target="_blank" rel="noopener" data-i18n="card-link">Ver repositorio →</a>
       </article>
     </div>
   </section>
 
   <section id="skills" class="section">
-    <h2>Skills</h2>
+    <h2 data-i18n="skills-title">Skills</h2>
     <ul class="skills-list">
       <li>Rust</li>
       <li>C</li>
       <li>OpenGL / GLSL</li>
       <li>wgpu</li>
       <li>Wayland</li>
-      <li>Desarrollo de sistemas / kernels</li>
+      <li data-i18n="skill-systems">Desarrollo de sistemas / kernels</li>
       <li>Angular</li>
       <li>Node.js</li>
-      <li>Desarrollo web</li>
+      <li data-i18n="skill-web">Desarrollo web</li>
     </ul>
   </section>
 
   <section id="contact" class="section contact">
-    <h2>Contacto</h2>
-    <p>¿Querés escribirme? Encontrame acá:</p>
+    <h2 data-i18n="contact-title">Contacto</h2>
+    <p data-i18n="contact-text">¿Querés escribirme? Encontrame acá:</p>
     <div class="contact-links">
-      <a href="mailto:jairo.alarconr@gmail.com">Email</a>
+      <a href="mailto:jairo.alarconr@gmail.com" data-i18n="contact-email">Email</a>
       <a href="https://github.com/oriaj-nocrala" target="_blank" rel="noopener">GitHub</a>
       <a href="https://www.linkedin.com/in/oriaj-nocrala/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
