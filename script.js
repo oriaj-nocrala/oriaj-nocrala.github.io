@@ -9,7 +9,7 @@ const translations = {
     "hero-eyebrow": "Hola, soy",
     "hero-tagline": "Entusiasta de los sistemas. Amante de Linux. BTW, uso Arch. Fuera de broma: me interesa más entender cómo funcionan las cosas por dentro —kernels, memoria, shaders— que quedarme usando un framework como caja negra.",
     "hero-btn-projects": "Ver proyectos",
-    "hero-btn-contact": "Contactame",
+    "hero-btn-contact": "Contáctame",
     "about-title": "Sobre mí",
     "about-text": "Ingeniero de software con acento en sistemas: me la paso más cómodo escribiendo un kernel en Rust, un allocator o un compositor para Wayland que ajustando un CSS. Aun así, también construyo productos completos de punta a punta —backend, frontend, apps móviles— cuando hace falta. Lo que de verdad me engancha es entender cómo funcionan las cosas por dentro: memoria, concurrencia, shaders, rendimiento.",
     "projects-title": "Proyectos",
@@ -22,7 +22,7 @@ const translations = {
     "skill-systems": "Desarrollo de sistemas / kernels",
     "skill-web": "Desarrollo web",
     "contact-title": "Contacto",
-    "contact-text": "¿Querés escribirme? Encontrame acá:",
+    "contact-text": "¿Quieres escribirme? Encuéntrame acá:",
     "contact-email": "Email",
   },
   en: {
